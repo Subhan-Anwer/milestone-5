@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 20px;
+  background-color: #add8e6;
+}
+
+h1 {
+  text-align: center;
+  color: #003147;
+  margin-top: 30px;
+}
+
+h2,
+h4 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 600px;
+  margin: 20px auto;
+  background-color: #003147;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.personal-info,
+.languages,
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#userAddress {
+  width: 440px;
+  margin-bottom: 20px;
+}
+
+.headings {
+  margin-top: 20px;
+}
+
+input,
+textarea {
+    max-width: 450px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+
+.education input {
+  width: 100px;
+}
+
+.about-me textarea {
+  width: 450px;
+}
+
+/* image upload styling */
+
+.file-input-container {
+  justify-self: center;
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: dashed 2px #fff;
+  border-radius: 15px;
+  margin: 30px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.file-input-container:hover {
+  cursor: pointer;
+  border: #007bff 2px dashed;
+  background-color: #023c57;
+}
+
+.file-input-container span {
+  font-size: 18px;
+}
+
+.file-input-container p {
+  margin: 5px 0 10px 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.file-input-container input[type="file"] {
+  position: inherit;
+  width: 310px;
+  height: 50px;
+  padding: 3px;
+  color: #444;
+  border: 1px solid rgba(8, 8, 8, 0.288);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.file-input::file-selector-button {
+  height: 42px;
+  border-radius: 8px;
+  margin: 0 20px 0 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.file-input::file-selector-button:hover {
+  background-color: #014997;
+}
+
+
+/* Button styling */
+.submit-btn {
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #0056c7;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  background-color: #004291;
+  transform: scale(1);
+  outline: none;  /* Remove the outline when clicked */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:focus {
+  outline: none;  /* Remove the outline when focused */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon.png">
+</head>
+
+<body>
+    <h1>Resume Builder</h1>
+
+    <form id="form">
+        <h2>Personal Information</h2>
+        <div class="personal-info">
+
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession :</label>
+                <input type="text" id="professionInput" name="profession" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone :</label>
+                <input type="tel" id="userPhone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="text" id="userEmail" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="website">Website :</label>
+                <input type="text" id="userWebsite" name="website" required>
+            </div>
+            <div class="form-group">
+                <label for="linkedin">linked In :</label>
+                <input type="text" id="userLinkedin" name="linkedin" required>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address :</label>
+            <input type="text" id="userAddress" name="address" required>
+        </div>
+
+        <!-- <div class="form-group  image-drop">
+            <label class="label" for="profilePicInput" class="drop-container">Drop your file here</label>
+            <input type="file" id="profilePicInput" name="profilePicInput" accept="image/*">
+        </div> -->
+
+        <!--  -->
+
+        <div class="file-input-container">
+            <label for="profilePicInput" class="file-input-label">
+                <span class="drop-title">Drop image here</span>
+                <p>or</p>
+                <input type="file" class="file-input" id="profilePicInput">
+            </label>
+        </div>
+
+        <!--  -->
+
+        <h2>Education</h2>
+
+        <div class="education">
+            <div class="form-group">
+                <label for="year-1">Year :</label>
+                <input type="text" id="year-1" name="year-1" required>
+            </div>
+            <div class="form-group">
+                <label for="degree-1">Degree :</label>
+                <input type="text" id="degree-1" name="degree" required>
+            </div>
+            <div class="form-group">
+                <label for="university">University :</label>
+                <input type="text" id="university" name="university" required>
+            </div>
+            <div class="form-group">
+                <label for="year-2">Year :</label>
+                <input type="text" id="year-2" name="year-2" required>
+            </div>
+            <div class="form-group">
+                <label for="degree-2">Degree :</label>
+                <input type="text" id="degree-2" name="degree" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College :</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+            <div class="form-group">
+                <label for="year-3">Year :</label>
+                <input type="text" id="year-3" name="year-3" required>
+            </div>
+            <div class="form-group">
+                <label for="degree-3">Degree :</label>
+                <input type="text" id="degree-3" name="degree" required>
+            </div>
+            <div class="form-group">
+                <label for="school">School :</label>
+                <input type="text" id="school" name="school" required>
+            </div>
+        </div>
+
+
+        <h2 class="headings">Languages</h2>
+        <div class="languages">
+            <div class="form-group">
+                <label for="language-1">language 1 :</label>
+                <input type="text" id="language-1" name="language-1" required>
+            </div>
+            <div class="form-group">
+                <label for="level-1">level 1-100 :</label>
+                <input type="number" id="level-1" name="level-1" required>
+            </div>
+            <div class="form-group">
+                <label for="language-2">language 2 :</label>
+                <input type="text" id="language-2" name="language-2" required>
+            </div>
+            <div class="form-group">
+                <label for="level-2">level 1-100 :</label>
+                <input type="number" id="level-2" name="level-2" required>
+            </div>
+            <div class="form-group">
+                <label for="language-3">language 3 :</label>
+                <input type="text" id="language-3" name="language-3" required>
+            </div>
+            <div class="form-group">
+                <label for="level-3">level 1-100 :</label>
+                <input type="number" id="level-3" name="level-3" required>
+            </div>
+        </div>
+
+
+        <h2 class="headings">About Me</h2>
+        <div class="about-me">
+            <div class="form-group">
+                <textarea required name="about" id="about" maxlength="520" placeholder="write a summary about yourself"></textarea>
+            </div>
+        </div>
+
+
+        <h2 class="headings">Experience</h2>
+        <h4>Job 1</h4>
+        <div class="education">
+            <div class="form-group">
+                <label for="job-year-1">Year :</label>
+                <input type="text" id="job-year-1" name="job-year-1" required>
+            </div>
+            <div class="form-group">
+                <label for="job-company-1">Company :</label>
+                <input type="text" id="job-company-1" name="job-company-1" required>
+            </div>
+            <div class="form-group">
+                <label for="position-1">Position :</label>
+                <input type="text" id="position-1" name="position-1" required>
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="form-group">
+                <textarea name="about-job-1" id="about-job-1" placeholder="write a summary about your job" maxlength="130"></textarea>
+            </div>
+        </div>
+
+
+        <h4>Job 2</h4>
+        <div class="education">
+            <div class="form-group">
+                <label for="job-year-2">Year :</label>
+                <input type="text" id="job-year-2" name="job-year-2" required>
+            </div>
+            <div class="form-group">
+                <label for="job-company-2">Company :</label>
+                <input type="text" id="job-company-2" name="job-company-2" required>
+            </div>
+            <div class="form-group">
+                <label for="position-2">Position :</label>
+                <input type="text" id="position-2" name="position-2" required>
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="form-group">
+                <textarea name="about-job-2" id="about-job-2" placeholder="write a summary about your job"></textarea>
+            </div>
+        </div>
+
+
+        <h4>Job 3</h4>
+        <div class="education">
+            <div class="form-group">
+                <label for="job-year-3">Year :</label>
+                <input type="text" id="job-year-3" name="job-year-3" required>
+            </div>
+            <div class="form-group">
+                <label for="job-company-3">Company :</label>
+                <input type="text" id="job-company-3" name="job-company-3" required>
+            </div>
+            <div class="form-group">
+                <label for="position-3">Position :</label>
+                <input type="text" id="position-3" name="position-3" required>
+            </div>
+        </div>
+        <div class="about-me">
+            <div class="form-group">
+                <textarea name="about-job-3" id="about-job-3" placeholder="write a summary about your job"></textarea>
+            </div>
+        </div>
+
+
+        <h2>Professional Skills</h2>
+        <div class="skills">
+            <div class="form-group">
+                <label for="skill-1">Skill 1 :</label>
+                <input type="text" id="skill-1" name="skill-1" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-1-level">level 1-100 :</label>
+                <input type="number" id="skill-1-level" name="skill-1-level" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-2">Skill 2 :</label>
+                <input type="text" id="skill-2" name="skill-2" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-2-level">level 1-100 :</label>
+                <input type="number" id="skill-2-level" name="skill-2-level" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-3">Skill 3 :</label>
+                <input type="text" id="skill-3" name="skill-3">
+            </div>
+            <div class="form-group">
+                <label for="skill-3-level">level 1-100 :</label>
+                <input type="number" id="skill-3-level" name="skill-3-level">
+            </div>
+            <div class="form-group">
+                <label for="skill-4">Skill 4 :</label>
+                <input type="text" id="skill-4" name="skill-4" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-4-level">level 1-100 :</label>
+                <input type="number" id="skill-4-level" name="skill-4-level" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-5">Skill 5 :</label>
+                <input type="text" id="skill-5" name="skill-5" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-5-level">level 1-100 :</label>
+                <input type="number" id="skill-5-level" name="skill-5-level" required>
+            </div>
+            <div class="form-group">
+                <label for="skill-6">Skill 6 :</label>
+                <input type="text" id="skill-6" name="skill-6">
+            </div>
+            <div class="form-group">
+                <label for="skill-6-level">level 1-100 :</label>
+                <input type="number" id="skill-6-level" name="skill-6-level">
+            </div>
+        </div>
+
+
+        <br><br>
+        <div class="button-container">
+            <button id="submit-btn" class="submit-btn" type="submit">Submit</button>
+        </div>
+
+    </form>
+
+
+
+
+
+    
+    
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>
