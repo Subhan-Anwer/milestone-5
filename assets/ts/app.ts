@@ -77,7 +77,8 @@ const downloadPDF = document.getElementById("download-pdf") as HTMLButtonElement
 
 
 if (userName) {
-    (document.getElementById("user-name") as HTMLElement).innerHTML = `${userName}<br><span id="profession">${userProfession}</span>`;
+    (document.getElementById("user-name") as HTMLElement).textContent = userName;
+    (document.getElementById("user-prof") as HTMLElement).textContent = userProfession;
     (document.getElementById("phone") as HTMLElement).textContent = userPhone;
     (document.getElementById("email") as HTMLElement).textContent = userEmail;
     (document.getElementById("website") as HTMLElement).textContent = userWebsite;
@@ -133,7 +134,7 @@ if (userName) {
     (document.getElementById("skill6") as HTMLElement).textContent = userSkill6;
     (document.getElementById("skilllvl6") as HTMLElement).innerHTML = `<div style="width: ${userSkill6Level}%; max-width: 100%;"></div>`;
 
-    const shareableURL = `${window.location.origin}?usename=${encodeURIComponent(userName)}`;
+    const shareableURL = `${window.location.origin}?usename=${encodeURIComponent(userName.replace(/\s+/g, ""))}`;
     shareableLink.href = shareableURL;
 
     // PDF Download

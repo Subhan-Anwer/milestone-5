@@ -63,7 +63,8 @@ const userSkill6Level = localStorage.getItem("userSkill6Level");
 const shareableLink = document.getElementById("share-link");
 const downloadPDF = document.getElementById("download-pdf");
 if (userName) {
-    document.getElementById("user-name").innerHTML = `${userName}<br><span id="profession">${userProfession}</span>`;
+    document.getElementById("user-name").textContent = userName;
+    document.getElementById("user-prof").textContent = userProfession;
     document.getElementById("phone").textContent = userPhone;
     document.getElementById("email").textContent = userEmail;
     document.getElementById("website").textContent = userWebsite;
@@ -128,12 +129,6 @@ if (userName) {
             })
                 .catch((error) => console.error("Error generating PDF:", error));
         }
-    });
-
-    // share link
-    shareableLink.addEventListener("click", () => {
-        const shareableURL = `${window.location.origin}?usename=${encodeURIComponent(userName)}`;
-        shareableLink.href = shareableURL;
     });
 }
 else {
