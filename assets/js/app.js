@@ -129,6 +129,12 @@ if (userName) {
                 .catch((error) => console.error("Error generating PDF:", error));
         }
     });
+
+    // share link
+    shareableLink.addEventListener("click", () => {
+        const shareableURL = `${window.location.origin}?usename=${encodeURIComponent(userName)}`;
+        shareableLink.href = shareableURL;
+    });
 }
 else {
     // do nothing!
